@@ -9,13 +9,20 @@ import Second from './pages/second';
  */
 class App extends React.Component {
   render() {
-   return (
-     <div>
-       <Home/>
-       <Second/>
-     </div>
-   )
+    return (
+      <div>
+        <Home/>
+        <Second/>
+      </div>
+    )
   }
 }
 
+
 ReactDom.render(<App/>, document.getElementById('root'));
+
+if (module.hot) {
+  module.hot.accept('./pages/home/index.jsx', function (e) {
+    ReactDom.render(<App/>, document.getElementById('root'));
+  })
+}
