@@ -10,11 +10,11 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    // var isHas = [1, 2, 3].includes(2);
-    // var p = new Promise(function (resolve, reject) {
-    //   resolve(100);
-    // });
-    // console.log(isHas,p);
+    var isHas = [1, 2, 3].includes(2);
+    var p = new Promise(function (resolve, reject) {
+      resolve(100);
+    });
+    console.log(isHas,p);
   }
 
   onError = () => {
