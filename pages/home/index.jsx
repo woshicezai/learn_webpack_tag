@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './index.css';
 /**
  * 首页
  */
@@ -25,7 +25,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <div>{'这里是首页'}</div>
+        <div className='home'>{'这里是首页'}</div>
         <button onClick={this.onError}>{'点击我试试 会出错哦'}</button>
       </div>
     )
