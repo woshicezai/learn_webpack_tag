@@ -29,7 +29,7 @@ export default class Second extends React.Component {
     let {value} = this.state;
     return (
       <div>
-        <div>{'我是小组件1'}</div>
+        <div>{'我是小组件'}</div>
         <button onClick={this.showAlert}>{'点击我 我会弹窗哦'}</button>
         <input onChange={this.changeValue} value={value}/>
       </div>
