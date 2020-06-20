@@ -10,6 +10,10 @@ export default class Second extends React.Component {
     alert('我是小组件');
   }
 
+  componentDidMount() {
+
+  }
+
 
   render() {
     return (

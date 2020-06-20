@@ -3,6 +3,7 @@ let path = require('path');
 module.exports = {
   entry: [require.resolve('./polyfills'),'./index.jsx',],
   mode: 'development',
+  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '',
