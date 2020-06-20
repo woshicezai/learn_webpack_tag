@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import Home from './pages/home';
+import Second from './pages/second';
 
 /**
  * 根类
@@ -11,6 +12,7 @@ class App extends React.Component {
    return (
      <div>
        <Home/>
+       <Second/>
      </div>
    )
   }
